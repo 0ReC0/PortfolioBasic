@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<header>
+    <div class="navigation">
+        <div class="header__burger hamburger visibility-visible">
+            <span></span>
+        </div>
+        <nav>
+            <a href="#about">About me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </div>
+    <h1>Sergei Kitanin,<br> Front-end developer</h1>
+</header>
+<main>
+    <section id="about" class="about">
+        <section class="about-avatar-area">
+            <img class="avatar-bg" src="images/image.jpg" alt="background image for avatar">
+            <img class="avatar" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGV
+        ufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80" alt="My photo">
+        </section>
+        <section class="about-description">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum dicta dolores dolorum
+                explicabo
+                fugit impedit iste maiores, minima minus nisi odit optio quam quas quisquam ratione sapiente sequi sunt
+                temporibus totam ullam voluptatibus? Aliquid at consequuntur cupiditate debitis delectus deserunt ea,
+                fugiat
+                in laudantium minima ratione saepe voluptate?</p>
+            <p><strong>Skills:</strong> Html, css, js</p>
+        </section>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <section class="portfolio-project">
+                <img src="images/project1.png" alt="project1">
+                <p>Flashcards</p>
+                <button class="open-window" data-modal-target="#modalFlashcards">Details</button>
+                <div class="modal window" id="modalFlashcards">
+                    <div class="modal-header">
+                        <h1>Flashcards</h1>
+                    </div>
+                    <div class="modal-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur doloribus, earum
+                        ex fugiat harum modi nisi obcaecati quae reiciendis repudiandae suscipit tempore voluptate? A
+                        aut deserunt dolore doloribus eius eos exercitationem expedita explicabo facilis harum illo
+                        incidunt itaque laborum minus non, officiis optio quaerat quas, quod repellat sunt totam veniam
+                        voluptas. Ea hic laboriosam nemo quam, tempore unde voluptatum. Amet aperiam aspernatur at aut
+                        commodi, consectetur consequatur cumque dignissimos distinctio doloribus enim et laborum libero
+                        magnam necessitatibus nemo neque nulla numquam placeat quidem quisquam ratione reprehenderit
+                        repudiandae saepe sint suscipit vel veniam! Eos libero magnam odit porro sapiente, velit.
+                    </div>
+                    <div class="modal-actions">
+                        <button data-close-button>Close</button>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio-project">
+                <img src="images/project2.png" alt="project2">
+                <p>Virtual Piano</p>
+                <button class="open-window" data-modal-target="#modalVirtualPiano">Details</button>
+                <div class="modal window" id="modalVirtualPiano">
+                    <div class="modal-header">
+                        <h1>Virtual Piano</h1>
+                    </div>
+                    <div class="modal-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur doloribus, earum
+                        ex fugiat harum modi nisi obcaecati quae reiciendis repudiandae suscipit tempore voluptate? A
+                        aut deserunt dolore doloribus eius eos exercitationem expedita explicabo facilis harum illo
+                        incidunt itaque laborum minus non, officiis optio quaerat quas, quod repellat sunt totam veniam
+                        voluptas. Ea hic laboriosam nemo quam, tempore unde voluptatum. Amet aperiam aspernatur at aut
+                        commodi, consectetur consequatur cumque dignissimos distinctio doloribus enim et laborum libero
+                        magnam necessitatibus nemo neque nulla numquam placeat quidem quisquam ratione reprehenderit
+                        repudiandae saepe sint suscipit vel veniam! Eos libero magnam odit porro sapiente, velit.
+                    </div>
+                    <div class="modal-actions">
+                        <button data-close-button>Close</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <h2>Contacts</h2>
+        <p>You can contact me at <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+            <br> or phone number – <a href="tel:+1234422323">+1234422323</a></p>
+        <p class="links">
+            <a href="https://github.com/"><img src="images/github.svg" alt="github"></a>
+            <a href="https://facebook.com/"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter"></a>
+            <a href="https://instagram.com/"><img src="images/instagram%201.svg" alt="instagram"></a>
+        </p>
+    </section>
+</main>
+<footer>
+    <h2>Sergei Kitanin</h2>
+    <p>Created on jetbrains courses 2021</p>
+</footer>
+<div class="overlay" id="overlay"></div>
+<script src="app.js"></script>
+</body>
+</html>
